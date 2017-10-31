@@ -24,6 +24,8 @@
 		835A86FC1FA8918F000E3AFD /* TestPodFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 835A86FA1FA8918F000E3AFD /* TestPodFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		835A87041FA891C6000E3AFD /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 835A87021FA891C6000E3AFD /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		835A87051FA891C6000E3AFD /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 835A87031FA891C6000E3AFD /* Test.m */; };
+		8377C5581FA8A607006B4E57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8377C5521FA8A508006B4E57 /* UIKit.framework */; };
+		8377C5591FA8A60B006B4E57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8377C5541FA8A510006B4E57 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8377C5591FA8A60B006B4E57 /* Foundation.framework in Frameworks */,
+				8377C5581FA8A607006B4E57 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
