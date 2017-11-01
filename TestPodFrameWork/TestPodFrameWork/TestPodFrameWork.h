@@ -6,7 +6,9 @@
 //  Copyright © 2017年 com.alibaba.ALPlayerVodSDK. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 
 //! Project version number for TestPodFrameWork.
 FOUNDATION_EXPORT double TestPodFrameWorkVersionNumber;

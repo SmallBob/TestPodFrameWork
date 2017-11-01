@@ -24,6 +24,8 @@
 		835A86FC1FA8918F000E3AFD /* TestPodFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 835A86FA1FA8918F000E3AFD /* TestPodFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		835A87041FA891C6000E3AFD /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 835A87021FA891C6000E3AFD /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		835A87051FA891C6000E3AFD /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 835A87031FA891C6000E3AFD /* Test.m */; };
+		83F37E161FA9C31D000AAF5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F37E151FA9C31D000AAF5A /* UIKit.framework */; };
+		83F37E181FA9C321000AAF5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F37E171FA9C321000AAF5A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		835A86FB1FA8918F000E3AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		835A87021FA891C6000E3AFD /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		835A87031FA891C6000E3AFD /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		83F37E151FA9C31D000AAF5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		83F37E171FA9C321000AAF5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F37E181FA9C321000AAF5A /* Foundation.framework in Frameworks */,
+				83F37E161FA9C31D000AAF5A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +56,7 @@
 			children = (
 				835A86F91FA8918F000E3AFD /* TestPodFrameWork */,
 				835A86F81FA8918F000E3AFD /* Products */,
+				83F37E141FA9C31D000AAF5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,15 @@
 				835A86FB1FA8918F000E3AFD /* Info.plist */,
 			);
 			path = TestPodFrameWork;
+			sourceTree = "<group>";
+		};
+		83F37E141FA9C31D000AAF5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83F37E171FA9C321000AAF5A /* Foundation.framework */,
+				83F37E151FA9C31D000AAF5A /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
