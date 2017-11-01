@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.framework = "AliyunVodPlayerSDK"
     s.ios.vendored_frameworks =  'FrameWork/AliyunVodPlayerSDK.framework',
     s.ios.public_header_files = 'FrameWork/AliyunVodPlayerSDK.framework/Headers/{.h}'
-        
+    s.source_files = "TestPodFrameWork/AliyunVodPlayerSDK.framework/Headers/{.h}"    
     
     s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
  
