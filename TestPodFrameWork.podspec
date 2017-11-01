@@ -2,8 +2,8 @@
 
 Pod::Spec.new do |s|
     s.name         = "TestPodFrameWork"
-    s.version      = "2.0.8"
-    s.ios.deployment_target = '7.0'
+    s.version      = "2.0.9"
+    s.ios.deployment_target = '8.0'
     s.summary      = "TestPodFrameWork is test!"
     s.homepage     = "https://github.com/SmallBob/TestPodFrameWork"
     s.license              = { :type => "MIT", :file => "LICENSE" }
