@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "TestPodFrameWork"
-    s.version      = "1.0.4"
+    s.version      = "1.0.5"
     s.ios.deployment_target = '7.0'
     s.summary      = "TestPodFrameWork is test!"
     s.homepage     = "https://github.com/SmallBob/TestPodFrameWork"
