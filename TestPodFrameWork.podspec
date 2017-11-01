@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "TestPodFrameWork"
-    s.version      = "2.1.0"
+    s.version      = "2.1.1"
     s.ios.deployment_target = '8.0'
     s.summary      = "TestPodFrameWork is test!"
     s.homepage     = "https://github.com/SmallBob/TestPodFrameWork"
@@ -13,7 +13,10 @@ Pod::Spec.new do |s|
    # s.source_files  = "TestPodFrameWork/TestPodFrameWork.framwork/Header/*.{h}"
     s.ios.vendored_frameworks = 'TestPodFrameWork.framework','AliyunVodPlayerSDK.framework'
  #s.resources          = "YJSettingTableView/YJSettingTableView.bundle"
-    s.requires_arc = true
+   s.frameworks = 'VideoToolBox','MediaPlayer'
+   s.libraries = 'z'
+
+     s.requires_arc = true
 end
 
 
