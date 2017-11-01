@@ -16,9 +16,10 @@ Pod::Spec.new do |s|
     s.source       = { :git => "https://github.com/SmallBob/TestPodFrameWork.git",:tag=>s.version}
     s.framework = "AliyunVodPlayerSDK"
     s.ios.vendored_frameworks =  'TestPodFrameWork/AliyunVodPlayerSDK.framework',
+    s.ios.public_header_files = 'TestPodFrameWork/AliyunVodPlayerSDK.framework/Headers/{.h}'
+        
     
-
- # s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
+    s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
  
 
     
