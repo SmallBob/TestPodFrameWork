@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "TestPodFrameWork"
-    s.version      = "1.0.8"
+    s.version      = "1.0.9"
     s.ios.deployment_target = '8.0'
     s.summary      = "TestPodFrameWork is test!"
     s.homepage     = "https://github.com/SmallBob/TestPodFrameWork"
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.framework = "AliyunVodPlayerSDK"
     s.ios.vendored_frameworks =  'FrameWork/AliyunVodPlayerSDK.framework',
     s.ios.public_header_files = 'FrameWork/AliyunVodPlayerSDK.framework/Headers/{.h}'
-    s.source_files = "TestPodFrameWork/AliyunVodPlayerSDK.framework/Headers/{.h}"    
+    s.source_files = 'TestPodFrameWork/**/**/*.{h,m}'    
     
     s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
  
