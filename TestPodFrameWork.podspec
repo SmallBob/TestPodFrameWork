@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "TestPodFrameWork"
-    s.version      = "2.1.6"
+    s.version      = "2.1.8"
     s.ios.deployment_target = '8.0'
     s.summary      = "TestPodFrameWork is test!"
     s.homepage     = "https://github.com/SmallBob/TestPodFrameWork"
@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
 
     s.subspec 'AliyunVodPlayerViewSDK' do |vodUIPlayer|
      vodUIPlayer.ios.vendored_frameworks = 'AliyunVodPlayerSDK.framework'
-     vodUIPlayer.dependency 'AliyunPlayer_iOS/AliyunVodPlayerSDK'
-     vodPlayer.resource = 'AliyunVodPlayerViewResource.bundle'
+     vodUIPlayer.dependency 'TestPodFrameWork/AliyunVodPlayerSDK'
+     vodUIPlayer.resource = 'AliyunVodPlayerViewResource.bundle'
     end
    
     #s.ios.vendored_frameworks = 'TestPodFrameWork.framework','AliyunVodPlayerSDK.framework','AliyunVodPlayerViewSDK.framework'
