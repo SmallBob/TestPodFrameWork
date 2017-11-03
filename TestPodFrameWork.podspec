@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "TestPodFrameWork"
-    s.version      = "2.1.4"
+    s.version      = "2.1.5"
     s.ios.deployment_target = '8.0'
     s.summary      = "TestPodFrameWork is test!"
     s.homepage     = "https://github.com/SmallBob/TestPodFrameWork"
@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
     s.source       = { :git => "https://github.com/SmallBob/TestPodFrameWork.git", :tag => s.version }
    
    s.subspec 'TestPod' do |tp|
-     tp.ios.vendored_frameworks = 'TestPodFrameWork.framework',
-      
+     tp.ios.vendored_frameworks = 'TestPodFrameWork.framework'
+   end      
 
  # s.source_files  = "TestPodFrameWork/TestPodFrameWork.framwork/Header/*.{h}"
     s.ios.vendored_frameworks = 'TestPodFrameWork.framework','AliyunVodPlayerSDK.framework','AliyunVodPlayerViewSDK.framework'
