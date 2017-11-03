@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "TestPodFrameWork"
-    s.version      = "2.1.5"
+    s.version      = "2.1.6"
     s.ios.deployment_target = '8.0'
     s.summary      = "TestPodFrameWork is test!"
     s.homepage     = "https://github.com/SmallBob/TestPodFrameWork"
@@ -14,15 +14,27 @@ Pod::Spec.new do |s|
    s.subspec 'TestPod' do |tp|
      tp.ios.vendored_frameworks = 'TestPodFrameWork.framework'
    end      
+   
+   s.subspec 'AliyunVodPlayerSDK' do |vodPlayer|
+     vodPlayer.ios.vendored_frameworks = 'AliyunVodPlayerSDK.framework'
+     vodPlayer.resource = 'AliyunVodPlayerViewResource.bundle'
+     vodPlayer.frameworks = 'VideoToolBox','MediaPlayer'
+     vodPlayer.libraries = 'z'
+    end
 
- # s.source_files  = "TestPodFrameWork/TestPodFrameWork.framwork/Header/*.{h}"
-    s.ios.vendored_frameworks = 'TestPodFrameWork.framework','AliyunVodPlayerSDK.framework','AliyunVodPlayerViewSDK.framework'
-    s.resource = 'AliyunVodPlayerViewResource.bundle'
+    s.subspec 'AliyunVodPlayerViewSDK' do |vodUIPlayer|
+     vodUIPlayer.ios.vendored_frameworks = 'AliyunVodPlayerSDK.framework'
+     vodUIPlayer.dependency 'AliyunPlayer_iOS/AliyunVodPlayerSDK'
+     vodPlayer.resource = 'AliyunVodPlayerViewResource.bundle'
+    end
+   
+    #s.ios.vendored_frameworks = 'TestPodFrameWork.framework','AliyunVodPlayerSDK.framework','AliyunVodPlayerViewSDK.framework'
+    #s.resource = 'AliyunVodPlayerViewResource.bundle'
 
-   s.frameworks = 'VideoToolBox','MediaPlayer'
-   s.libraries = 'z'
+    #s.frameworks = 'VideoToolBox','MediaPlayer'
+    s.libraries = 'z'
   
-     s.requires_arc = true
+   s.requires_arc = true
 end
 
 
