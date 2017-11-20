@@ -1,6 +1,0 @@
-framework module TestPodFrameWork {
-  umbrella header "TestPodFrameWork.h"
-
-  export *
-  module * { export * }
-}

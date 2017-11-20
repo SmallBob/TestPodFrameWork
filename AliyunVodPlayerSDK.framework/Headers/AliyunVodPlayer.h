@@ -39,6 +39,15 @@
 @interface AliyunVodPlayer : NSObject
 
 /*
+ *功能：临时AccessKeyId、AccessKeySecret和SecurityToken：开启RAM授权，并通过STS授权系统提供的OpenAPI或SDK获取的AccessKeyId、AccessKeySecret和SecurityToken，用于播放和下载请求
+ *备注：参数明细->https://help.aliyun.com/document_detail/28788.html?spm=5176.doc28787.6.706.2G5SLS
+ *版本：3.2.0版本使用
+ */
+- (void)prepareWithVid:(NSString *)vid accessKeyId:(NSString*)accessKeyId accessKeySecret:(NSString*)accessKeySecret securityToken:(NSString *)securityToken;
+
+
+
+/*
  *功能：使用vid+playauth方式播放。
  *参数：vid 视频id
  
@@ -263,11 +272,22 @@
 @property(nonatomic, readonly)  NSTimeInterval bufferPercentage;
 
 /**
+ * 功能：循环播放控制
+ */
+@property(nonatomic, readwrite)  BOOL circlePlay;
+
+/**
  * 功能：
  * 参数：block:音频数据回调
  *
  */
 -(void) getAudioData:(void (^)(NSData *data))block;
+
+/**
+ * 功能：截取当前正在播放图像
+ *
+ */
+-(UIImage*) snapshot;
 
 /*
  功能：获取此播放器版本号 vision:3.0.0
