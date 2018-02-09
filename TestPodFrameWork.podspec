@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 Pod::Spec.new do |s|
   s.name         = "TestPodFrameWork"
   s.version      = "3.0.0"
